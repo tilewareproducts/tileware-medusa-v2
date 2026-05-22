@@ -1,5 +1,8 @@
 {
   "build": {
-    "command": "npm ci --legacy-peer-deps --production"
+    "builder": "nixpacks",
+    "nixpacks": {
+      "pkgs": ["nodejs", "libatomic1"]
+    }
   }
 }
